@@ -1,0 +1,45 @@
+.header {
+	background-color: #303030;
+	color: white;
+	height: 61px;
+	box-shadow: 0 4px 4px #00000040;
+}
+
+.main {
+	background-color: #232323;
+	min-height: 91vmin;
+}
+
+.icon {
+	height: 80px;
+	width: 80px;
+	fill: white;
+}
+
+.icon:hover {
+	transition: 1.5s;
+	fill: palegreen;
+}
+
+.background-video {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -100;
+}
+
+.background-video video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
