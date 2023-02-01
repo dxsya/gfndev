@@ -1,11 +1,10 @@
 import './App.css'
-import Header from './components/Header'
 import Body from './components/Body'
+import { Waiting } from './components/Waiting'
 
 function App() {
 	return (
 		<div className='App'>
-			<Header />
 			<Body />
 		</div>
 	)
