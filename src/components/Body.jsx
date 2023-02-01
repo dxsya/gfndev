@@ -1,7 +1,6 @@
 import React, { Component, useEffect, useRef } from 'react'
 import './main.css'
 import AttackOnTitan from './utils/background-video.mp4'
-import VideoPlayer from './VideoPlayer'
 import { Waiting } from './Waiting'
 
 function Body() {
@@ -19,10 +18,7 @@ function Body() {
 			<video ref={videoRef} muted loop id='backgroundVideo'>
 				<source src={AttackOnTitan} type='video/mp4' />
 			</video>
-			{/* <VideoPlayer /> */}
 			<div className='profile'>
-				<Waiting />
-
 				<div className='profile-pic'></div>
 				<h1>GFNDEV</h1>
 				<p>Python Developer</p>
