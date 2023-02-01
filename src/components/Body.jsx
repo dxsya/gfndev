@@ -1,8 +1,8 @@
 import React, { Component, useEffect, useRef } from 'react'
 import './main.css'
 import AttackOnTitan from './utils/background-video.mp4'
-import VideoPlayer from './VideoPlayer'
 import { Waiting } from './Waiting'
+import LoseMp3 from './utils/lose.mp3'
 
 function Body() {
 	const videoRef = useRef(null)
@@ -11,9 +11,9 @@ function Body() {
 	useEffect(() => {
 		const video = videoRef.current
 		video.currentTime = 0
-
+		video.preload = 'auto'
+		video.pause()
 		setTimeout(() => {
-			video.muted = 'false'
 			video.play()
 			block.current.style.display = 'block'
 		}, 9000)
@@ -21,7 +21,13 @@ function Body() {
 	return (
 		<div className='main background-video'>
 			<Waiting />
-			<video ref={videoRef} muted loop id='backgroundVideo'>
+			<iframe
+				src='https://olafwempe.com/mp3/silence/silence.mp3'
+				type='audio/mp3'
+				allow='autoplay'
+				style={{ display: 'none' }}
+			/>
+			<video ref={videoRef} autoPlay loop id='backgroundVideo'>
 				<source src={AttackOnTitan} type='video/mp4' />
 			</video>
 			<div ref={block} style={{ display: 'none' }}>
