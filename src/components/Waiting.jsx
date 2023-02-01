@@ -1,6 +1,7 @@
 import React, { Component, useEffect, useRef, useState } from 'react'
 import WaitingVideo from './utils/waiting.mp4'
 import './main.css'
+import Body from './Body'
 
 export function Waiting() {
 	const videoRef = useRef(null)

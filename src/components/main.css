@@ -14,12 +14,14 @@ h1 {
 	color: rgb(113, 135, 170);
 	font-size: 54px;
 	text-shadow: 1px 1px 2px black;
+	margin: 0;
 }
 
 .profile > p {
 	font-size: 2em;
 	color: white;
 	text-shadow: 1px 1px 2px black;
+	margin: 0;
 }
 
 .profile-pic {
@@ -55,7 +57,7 @@ h1 {
 	display: flex;
 	width: 30%;
 	margin: 0 auto;
-	margin-top: 3%;
+	margin-top: 2%;
 	justify-content: space-between;
 }
 
