@@ -78,7 +78,8 @@ h1 {
 	z-index: 100;
 }
 
-.background-video video {
+.background-video video,
+.waiting-video video {
 	position: absolute;
 	top: 50%;
 	left: 50%;
